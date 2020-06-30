@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lockey on WeStream</title>
+    <link rel="shortcut icon" href="assets/img/WS.png" sizes="16x16" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/bootstrap-4.5.0-dist/css/bootstrap.css">    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.13.1-web/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta+Malar:bold,regular,medium">
+    <link rel="stylesheet" href="assets/glide-3.4.1/dist/css/glide.core.css">
+    <link rel="stylesheet" href="assets/glide-3.4.1/dist/css/glide.theme.css">
+
+</head>
+<body>
+    <div class="container-fluid mx-auto px-0">
+        <!-- Navbar -->
+        <div id="Navbar" class="navbar navbar-expand-md row mx-auto w-100">
+            <div class="navbar-nav col-2">
+                <button class="btn nav-link align-self-center bars"><i class="fas fa-bars"></i></button>
+                <a href="index.html" class="btn navbar-brand">
+                    <span class="brand-we">We</span><span class="brand-stream">Stream</span>
+                </a>
+            </div>            
+            <ul class="navbar-nav mr-auto col-2">
+                <li class="nav-item"><a class="nav-link nav-menu" href="browse.html">Browse</a></li>
+                <li class="nav-item"><a class="nav-link nav-menu" href="esport.html">E-Sports</a></li>
+            </ul>
+            <form id="FormSearch" class="form-inline navbar-nav justify-content-center px-0 col-4" action="">
+                <input class="form-control input-search" type="search" placeholder="Search" aria-label="Search" name="" id="">
+                <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="navbar-nav mr-auto justify-content-end px-0 col-4">
+                <li class="nav-item" title="Start recording"><a class="py-3 nav-link" href="#"><i class="nav-icon fas fa-video"></i></a></li>
+                <li class="nav-item" title="Notification"><a class="py-3 nav-link" href="#"><i class="nav-icon fas fa-bell"></i></a></li>
+                <li id="Popup-profile-btn" title="Profile" class="nav-item py-2"><img class="popup-profile-btn" src="assets/img/user-dendi.png"></img></li>
+            </ul>
+            <!-- Popup Profile -->
+            <div id="Popup-Profile" class="popup-profile">
+                <ul>
+                    <li class="row popup-profile-name">
+                        <div class="col">IDFxtrt21-foxtrotMVP
+                            <p class="popup-profile-id">@Foxid</p></div>
+                        <img class="popup-profile-btn" style="margin-right: 15px; margin-left: 0;" src="assets/img/user-dendi.png"></img>
+                    </li>
+                    <hr>
+                    <li class="popup-profile-menu">
+                        <a id="linktoporfile" class="row" href=""><div class="col">
+                            <i class="fas fa-user-circle"></i>Accounts</div>
+                        </a>
+                    </li>
+                    <li class="popup-profile-menu">
+                        <a class="row" href=""><div class="col">
+                            <i class="fas fa-cog"></i>Settings</div>
+                        </a>
+                    </li>
+                    <li class="popup-profile-menu">
+                        <a class="row" href=""><div class="col">
+                            <i class="fas fa-list"></i>My Videos</div>
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="popup-profile-menu">
+                        <a class="row" href=""><div class="col">
+                            <i class="fas fa-sign-out-alt"></i>Logout</div>
+                        </a>
+                    </li>                
+                </ul>
+            </div>
+        </div>
+        <!-- Nav End -->
+
+        <!-- Content -->
+        <div id="Content" class="row pr-0">
+            <!-- Main -->
+            <div class="col">
+                <!-- News -->
+                <div class="content-box">
+                    <div class="content-content glide m-0">
+                        <div class="content-title">News</div>
+                        <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="news-card">
+                                    <a href="">
+                                        <img class="news-card-img" src="assets/img/news-1.png" alt="">
+                                        <div class="news-card-cap">VPESPORTS | TI10 to be postponed possibly to 2021, but Battle Pass will be released soon</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="news-card">
+                                    <a href="">
+                                        <img class="news-card-img" src="assets/img/news-2.webp" alt="">
+                                        <div class="news-card-cap">GTA 5 is free on the Epic Games Store</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="news-card">
+                                    <a href="">
+                                        <img class="news-card-img" src="assets/img/news-3.webp" alt="">
+                                        <div class="news-card-cap">PlayStation has a "compelling line-up" of PS5 games that it plans to reveal "soon"</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="news-card">
+                                    <a href="">
+                                        <img class="news-card-img" src="assets/img/news-4.jpg" alt="">
+                                        <div class="news-card-cap">Crash Bandicoot 4 Dev Talks New Art Style, Level Design, And More In GameSpot Interview</div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="news-nav-prev" data-glide-dir="<"><img src="assets/img/SVG/prev.svg" alt=""></button>
+                            <button class="news-nav-next" data-glide-dir=">"><img src="assets/img/SVG/next.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Followers -->
+                <div id="Followers" class="content-box">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <a class="z-1" href=""><img class="follower-ava" src="assets/img/user-eslcsgo.jpeg" alt=""></a>
+                            <div class="follower-box d-flex align-items-center">
+                                <div class="col p-0"><a href="" class="follower-name">lockey</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="follower-count-followers d-flex align-items-center">
+                                        <i class="fas fa-user-circle"></i>
+                                        125.213
+                                    </div>
+                                    <div class="divider-vertical"></div><button class="follower-follow btn" href="" >FOLLOW</button>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-group-item d-flex align-items-center">
+                            <a class="z-1" href=""><img class="follower-ava" src="assets/img/game-valorant.png" alt=""></a>
+                            <div class="follower-box d-flex align-items-center">
+                                <div class="col p-0"><a href="" class="follower-name">harry22321</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="follower-count-followers d-flex align-items-center">
+                                        <i class="fas fa-user-circle"></i>
+                                        25.013
+                                    </div>
+                                    <div class="divider-vertical"></div><button class="follower-follow btn" href="" >FOLLOW</button>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-group-item d-flex align-items-center">
+                            <a class="z-1" href=""><img class="follower-ava" src="assets/img/user-drdis.png" alt=""></a>
+                            <div class="follower-box d-flex align-items-center">
+                                <div class="col p-0"><a href="" class="follower-name">milebrustler</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="follower-count-followers d-flex align-items-center">
+                                        <i class="fas fa-user-circle"></i>
+                                        925.290
+                                    </div>
+                                    <div class="divider-vertical"></div><button class="follower-follow btn" href="" >FOLLOW</button>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-group-item d-flex align-items-center">
+                            <a class="z-1" href=""><img class="follower-ava" src="assets/img/user-poki.png" alt=""></a>
+                            <div class="follower-box d-flex align-items-center">
+                                <div class="col p-0"><a href="" class="follower-name">nutt hunt</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="follower-count-followers d-flex align-items-center">
+                                        <i class="fas fa-user-circle"></i>
+                                        225.993
+                                    </div>
+                                    <div class="divider-vertical"></div><button class="follower-follow btn" href="" >FOLLOW</button>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-group-item d-flex align-items-center">
+                            <a class="z-1" href=""><img class="follower-ava" src="assets/img/user-dendi.png" alt=""></a>
+                            <div class="follower-box d-flex align-items-center">
+                                <div class="col p-0"><a href="" class="follower-name">brookie</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="follower-count-followers d-flex align-items-center">
+                                        <i class="fas fa-user-circle"></i>
+                                        15.213
+                                    </div>
+                                    <div class="divider-vertical"></div><button class="follower-follow btn" href="" >FOLLOW</button>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-group-item d-flex align-items-center">
+                            <a class="z-1" href=""><img class="follower-ava" src="assets/img/game-valorant.png" alt=""></a>
+                            <div class="follower-box d-flex align-items-center">
+                                <div class="col p-0"><a href="" class="follower-name">west22993</a></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="follower-count-followers d-flex align-items-center">
+                                        <i class="fas fa-user-circle"></i>
+                                        25.009
+                                    </div>
+                                    <div class="divider-vertical"></div><button class="follower-follow btn" href="" >FOLLOW</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SideScreen -->
+            <div id="SubsProfile">
+                <div class="subprofile-profile-box text-center">
+                    <img class="subprofile-profile-ava" src="assets/img/user-eslcsgo.jpeg" alt="">                    
+                    <p class="subprofile-profile-name">lockey</p>
+                </div>
+                <div class="subprofile-btn-box text-center">
+                    <div><button class="btn subprofile-btn-follow">follow</button></div>
+                    <div><button class="btn subprofile-btn-notif"><i class="fas fa-bell"></i></button></div>
+                </div>
+                <div class="subprofile-desc text-center">
+                    welcome to my streaming accounts, give like and follow
+                </div>
+            </div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Sidebar -->
+        <div id="Sidebar">
+            <!-- Channles -->
+            <ul class="side-categories">
+                <li class="side-header">
+                    <span>CHANNELS</span>
+                    <a href="channels.html" class="side-all">ALL</a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/user-dendi.png" class="side-ava" alt="">
+                        <div class="col">
+                            Dendi
+                            <p class="side-sub">Dota 2</p>
+                        </div>
+                        <div class="channel-live-on"></div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/user-eslcsgo.jpeg" class="side-ava" alt="">
+                        <div class="col">
+                            ESL_CSGO
+                            <p class="side-sub">Counter-Strike: Glob...</p>
+                        </div>
+                        <div class="channel-live-on"></div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/user-poki.png" class="side-ava" alt="">
+                        <div class="col">
+                            pokimane
+                            <p class="side-sub">Fortnite</p>
+                        </div>
+                        <div class="channel-live-on"></div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/user-drdis.png" class="side-ava" alt="">
+                        <div class="col">
+                            DrDisrespect
+                            <p class="side-sub">Offline</p>
+                        </div>
+                        <div class="channel-live-off"></div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/user-dota2ti.png" class="side-ava" alt="">
+                        <div class="col">
+                            Dota2ti
+                            <p class="side-sub">Offline</p>
+                        </div>
+                        <div class="channel-live-off"></div>
+                    </a>
+                </li>
+            </ul>
+            <!-- Games -->
+            <ul class="side-categories">
+                <li class="side-header">
+                    <span>GAMES</span>
+                    <a href="games.html" class="side-all">ALL</a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/game-dota2.png" class="side-ava" alt="">
+                        <div class="col position-relative">
+                            Dota 2
+                            <p class="side-sub-games">116K viewers</p>
+                            <div class="game-live-on"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/game-csgo.png" class="side-ava" alt="">
+                        <div class="col position-relative">
+                            Counter-Strike: G...
+                            <p class="side-sub-games">157K viewers</p>
+                            <div class="game-live-on"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/game-fortnite.png" class="side-ava" alt="">
+                        <div class="col position-relative">
+                            Fortnite
+                            <p class="side-sub-games">234K viewers</p>
+                            <div class="game-live-on"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="side-box-item">
+                    <a class="row side-item" href="">
+                        <img src="assets/img/game-valorant.png" class="side-ava" alt="">
+                        <div class="col position-relative">
+                            VALORANT
+                            <p class="side-sub-games">125K viewers</p>
+                            <div class="game-live-on"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar End -->
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/glide-3.4.1/dist/glide.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+</html>
